@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ukv8thb.css" />
     <!-- <link rel="stylesheet" href="main.css"> -->
 
@@ -48,55 +49,61 @@
     </script>
   </head>
 
-  <body class="recweek-badUX">
+  <body class="rwBad">
     <div class="header">
       <figure class="header__logo-container">
-        <img src="logo.png" alt="" class="header__logo-image" />
+        <img src="./assets/logo_bw.png" alt="" class="header__logo-image" />
       </figure>
+
+      <div class="header__button">
+        JOIN US
+      </div>
     </div>
 
     <div class="main">
       <figure class="main__welcome">
-        <img src="RW_welcome.png" />
+        <img src="./assets/RW_welcome.png" />
       </figure>
       <figure class="main__to">
-        <img src="RW_to.png" />
+        <img src="./assets/RW_to.png" />
       </figure>
       <figure class="main__UXS">
-        <img src="RW_UXSoc.png" />
+        <img src="./assets/RW_UXSoc.png" />
       </figure>
     </div>
 
-    <div class="subtitle">
-      -*=* The tea? We make cool websites and have amazing members *=*-
-    </div>
+    <div class="subtitle__marquee"><div class="subtitle">
+      The tea? We make cool websites and have amazing members.
+    </div></div>
 
     <div class="subtitle_2">
-      The hot tea? <a href="/">User Experience Society</a> advocates for human-centered design to solve problems in the community.
+      The hot tea? <a href="/">User Experience Society</a> goes beyond just making sazzy websites. In fact, we advocate for human-centered design to solve problems in the community.
     </div>
 
     <div class="subtitle_3">
-      Want to Experience a Better Website Design?
+      PS: Here we'll teach you the difference between good and bad UX...<br>
+      and make sure you're on the right side of it!
     </div>
 
     </div>
-    <div class="redirect">
-      <div class="redirect__button" data-modal-target="redirect__modal">
+    <div class="uxtoggle">
+        <label class="uxtoggle_switch">
+          <input type="checkbox" id="switchUX">
+          <span class="slider round"></span>
+        </label>
+      <div class="uxtoggle_note">
+        try clicking on me pretty please
+      </div>
+
+      <!-- <div class="redirect__button" data-modal-target="redirect__modal">
         CLICK ME PLEASE WITH A CHERRY ON TOP
       </div>
-      <div class="redirect__note1">
-        click it pls
-      </div>
-      <div class="redirect_note2">
-        ps: that is a button<br>click it
-      </div>
-
       <div id="redirect__modal" class="modal-content">
         <div class="close-container">
           <img src="close.svg" alt="close" class="close">
         </div>
         modal test send help
-      </div>
+      </div> -->
 
     </div>
 
@@ -104,9 +111,25 @@
 
   <script type='text/javascript' src="./scripts/jquery.min.js"></script>
   <script type='text/javascript' src="./scripts/popper.min.js"></script>
-  <script type='text/javascript' src="./scripts/jquery-1.7.2.min.js"></script>
+  <script type='text/javascript' src="./scripts/jquery-1.12.4.js"></script>
   <script type='text/javascript' src="./scripts/jquery.cookie-1.3.1.js"></script>
+  <script type='text/javascript' src="./scripts/jquery-ui.js"></script>
+  <script type='text/javascript' src="./scripts/jquery-ui.min.js"></script>
   <script type="text/javascript" src="./scripts/modal.js"></script>
   <script type='text/javascript' src="./scripts/bootstrap.min.js"></script>
+  <script type='text/css' src="./scripts/jquery-ui.css"></script>
+
+<script type="text/javascript">
+  $('#switchUX').change(function(){
+      if($(this).is(":checked")) {
+          $('body').switchClass( "rwBad", "rwGood", 300, "easeInOutQuad" );
+      }
+      else {
+        $('body').switchClass( "rwGood", "rwBad", 300, "easeInOutQuad" );
+
+      }
+  });
+</script>
+
 
 </html>
