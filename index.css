@@ -160,13 +160,98 @@ margin: auto; width: 60%; margin-top: 7vh; }
 
 .uxtoggle { width: 80%; margin: auto; text-align: center; margin-top: 7vh; }
 
+.rwBad .main figure span { display: none; }
+
+.uxtoggle_main { display: flex;align-items: center; justify-content: center; }
+
+.rwBad .uxtoggle_bad { font-family: PT Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 31.25px;
+line-height: 41px;
+color: #ED4F3E; margin-right: 25px; }
+
+.rwBad .uxtoggle_good { font-family: PT Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 31.25px;
+line-height: 41px;
+color: #0A910F; margin-left: 20px; }
+
 .rwBad .uxtoggle_note { font-family: Passion One;
 font-size: 20px;
 line-height: 14px;
-color: #FFFFFF; width: 150px; text-align: left; margin: auto; margin-top: 30px; position: relative; left: 100px; }
+color: #FFFFFF; width: 150px; text-align: left; margin: auto; margin-top: 15px; position: relative; left: 100px; }
+
+.rwBad .uxtoggle_note img { display: block; margin-bottom: 15px; }
+
+/*** GOOD UX ***/
+
+.rwGood { height: 100%; background: white; }
+
+.rwGood .header__button { width: 97px;
+height: 34px;
+background: linear-gradient(180deg, #3E2CB3 27.8%, #54005B 100%), #008ED4;
+border-radius: 4px;
+font-family: Proxima Nova;
+font-size: 16px;
+line-height: 34px;
+letter-spacing: 0.05em; color: white; text-align: center; position: absolute; right: 50px; }
+
+.rwGood .main { position: relative; width: 100%; margin: auto; text-align: center; margin-top: 20vh; }
+
+.rwGood .main img { display: none; }
+.rwGood .main figure { display: inline-block; margin: 0px 0px 0px 12px; font: 600 48px/48px Proxima Nova; color: #54005B; }
+
+.rwGood .subtitle__marquee { margin: auto; width: 80%; text-align: center; }
+.rwGood .subtitle { text-align: center; font: 25px/25px Proxima Nova; color: #909090; margin-top: 9vh; }
+
+.rwGood .subtitle_2 { color: #909090; text-align: center; font: 25px/40px Proxima Nova; width: 70%; margin: auto; margin-top: 5.5vh; }
+.rwGood .subtitle_2 a { color: #909090; text-decoration: none; }
+
+
+.rwGood .subtitle_3 { text-align: center; font: 20px/35px Proxima Nova; color: #909090;
+margin: auto; width: 60%; margin-top: 5.5vh; }
+
+
+.rwGood .uxtoggle { margin-top: 7vh; }
+
+.rwGood .uxtoggle_bad { font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 41px;
+color: #ED4F3E; margin-right: 25px; }
+
+.rwGood .uxtoggle_good { font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 41px;
+color: #0A910F; margin-left: 20px; }
+
+.rwGood .uxtoggle_note { display: none; }
+
+
+/* .rwGood .subtitle_2 {
+  animation: boi 0.5s forwards;
+}
+
+@keyframes boi {
+  from { font-family: PT Serif;
+  font-size: 19px;
+  line-height: 33px;
+  text-align: center;
+  color: #ED4F3E;
+  width: 90%; margin: auto; }
+  to {
+    color: inherit;
+   }
+} */
 
 /* utility */
-
+.next-state {
+}
 strong {
   font-weight: 600;
 }
