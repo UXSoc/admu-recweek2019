@@ -686,3 +686,13 @@ margin-left: -2px; margin-right: -2px;
     transform: translate(40vw, 0px);
   }
 }
+
+
+/**** TRANSITIONING FROM BAD UX TO GOOD UX ****/
+.rwGood { animation: bgz 2s; }
+@keyframes bgz { from { opacity: 0; }
+to { opacity: 1; } }
+
+.rwBad { animation: bgb 2s; }
+@keyframes bgb { from { opacity: 0; }
+to { opacity: 1; } }
