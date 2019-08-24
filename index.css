@@ -905,26 +905,28 @@ border-radius: 30px;
 #tabs_slider {
   border-top: 3px solid #6213ac;
   transition: transform 0.5s;
-  width: 236px;
+  width: 240px;
   position: relative;
   top: -2px;
-  left: -7px;
+  left: -8px;
 }
 
 .rwG__tabs [type="radio"],
 #r1:checked~#tabs_slider {
-  transform: translate(calc(40vw - 235px), 0px);
+  transform: translate(calc(40vw - 236px), 0px);
 }
 
 .rwG__tabs [type="radio"],
 #r2:checked~#tabs_slider {
   transform: translate(40vw, 0px);
+  left: 0;
 }
 
 .rwG__tabs [type="radio"]:checked+label {
   transition: 0.5s all ease-in-out;
   color: #6213ac;
 }
+
 
 .rwG__tabs [type="radio"]:checked+label+.rwG__tabs-content {
   display: inline-block;
