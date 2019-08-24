@@ -434,6 +434,10 @@ input:checked+.slider:before {
   opacity: 0.7;
 }
 
+.rwGood .header__button:hover {
+  opacity: 0.7;
+}
+
 .rwBad .entry_container_right {
   display: none;
 }
@@ -577,8 +581,6 @@ input:checked+.slider:before {
   font-family: Proxima Nova;
   font-size: 31.25px;
   line-height: 40px;
-  display: flex;
-  justify-content: center;
 }
 
 .rwG__tagline-main b div {
