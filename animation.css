@@ -1,0 +1,41 @@
+@keyframes fade{
+  0%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0.1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+#stars1{
+  animation: fade infinite ease;
+  animation-duration: 5s;
+  position: absolute;
+  transform-origin: center;
+}
+
+#stars2{
+  animation: fade infinite ease;
+  animation-duration: 3s;
+  position: absolute;
+  transform-origin: center;
+}
+
+#stars3{
+  animation: fade infinite ease;
+  animation-duration: 4s;
+  position: absolute;
+  transform-origin: center;
+}
+
+#stars4{
+  animation: fade infinite ease;
+  animation-duration: 5s;
+  position: absolute;
+  transform-origin: center;
+}
