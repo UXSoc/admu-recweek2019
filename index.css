@@ -419,20 +419,18 @@ input:checked+.slider:before {
 }
 
 .rwGood .header__button {
-  width: 97px;
-  height: 34px;
   background: linear-gradient(180deg, #3e2cb3 27.8%, #54005b 100%), #008ed4;
   border-radius: 4px;
   font-family: Proxima Nova;
   font-size: 16px;
-  line-height: 34px;
   letter-spacing: 0.05em;
   color: white;
   text-align: center;
 }
 
-.rwGood .header__button:hover {
+.rwGood .header__button {
   background: #6213AC;
+  padding: 12px 15px;
   opacity: 0.7;
 }
 
@@ -579,6 +577,8 @@ input:checked+.slider:before {
   font-family: Proxima Nova;
   font-size: 31.25px;
   line-height: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .rwG__tagline-main b div {
@@ -586,7 +586,6 @@ input:checked+.slider:before {
 }
 
 #rwG__tagline-main-anim {
-  width: 135px;
   height: 32px;
   overflow: hidden;
   text-align: left;
@@ -1332,11 +1331,11 @@ em {
   }
 
   .rwG__tagline-blurb {
-    padding: 150px 40px 50px 40px;
+    padding: 150px 30px 60px 30px;
   }
 
   .rwG__tagline-main {
-    padding: 0px 40px 150px 40px;
+    padding: 0px 30px 150px 30px;
   }
 
   .rwG__close-title {
