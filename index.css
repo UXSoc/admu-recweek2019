@@ -5,6 +5,7 @@ body {
   left: 0;
   top: 0;
   padding: 0;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -1395,5 +1396,5 @@ em {
 }
 
 .fb-page {
-  margin: 16px;
+  margin: 0 60px;
 }
