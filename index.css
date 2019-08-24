@@ -865,7 +865,7 @@ border-radius: 30px;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   justify-content: center; */
-  width: 75%;
+  width: 80%;
   margin: auto;
   margin-top: 65px;
   text-align: left;
@@ -875,7 +875,7 @@ border-radius: 30px;
   font-size: 12.8px;
   line-height: 24px;
   color: #4f4f4f;
-  width: 450px;
+  width: 440px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -883,6 +883,18 @@ border-radius: 30px;
   align-items: center;
   margin: 20px;
   padding: 30px;
+}
+
+@media (max-width: 1360px) {
+  .rwG__dept-indiv {
+    width: 390px;
+}
+}
+
+@media (max-width: 1250px) {
+  .rwG__dept-indiv {
+    width: 360px;
+}
 }
 
 .rwG__dept-indiv img {
