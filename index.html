@@ -109,7 +109,7 @@
       <!-- <div class="uxtoggle_bad">Bad UX</div> -->
       <label class="uxtoggle_switch">
         <span id="bad-ux">Bad UX</span>
-        <input type="checkbox" id="switchUX">
+        <input type="checkbox" id="switchUX" onclick="ga('send', {'hitType': 'event',  'eventCategory': 'toggle', 'eventAction': 'transition-toggle'})">
         <span class="slider round"></span>
         <span id="good-ux">Good UX</span>
       </label>
